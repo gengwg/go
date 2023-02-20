@@ -50,3 +50,20 @@ $ ll /Users/gengwg/go/bin/
 total 43552
 -rwxr-xr-x  1 gengwg  staff  22297084 Mar 10 08:57 prometheus-ods-adapter
 ```
+
+Check documentation for a package:
+
+```
+$ go doc http.ListenAndServe
+package http // import "net/http"
+
+func ListenAndServe(addr string, handler Handler) error
+    ListenAndServe listens on the TCP network address addr and then calls Serve
+    with handler to handle requests on incoming connections. Accepted
+    connections are configured to enable TCP keep-alives.
+
+    The handler is typically nil, in which case the DefaultServeMux is used.
+
+    ListenAndServe always returns a non-nil error.
+```
+
